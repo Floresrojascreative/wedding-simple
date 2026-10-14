@@ -1,0 +1,1293 @@
+/* ==========================================
+   FLORES ROJA DESIGN
+   WEDDING ELEGANCE
+========================================== */
+
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root {
+
+    --cream: #f8f4ed;
+    --white: #ffffff;
+
+    --gold: #b99a63;
+    --gold-dark: #927443;
+
+    --text: #4b433c;
+    --text-light: #82766b;
+
+    --background: #faf8f4;
+
+    --font-title: 'Playfair Display', serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-body: 'Montserrat', sans-serif;
+
+}
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--background);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 110px 20px;
+    text-align: center;
+}
+
+
+/* ==========================================
+   TIPOGRAFÍA
+========================================== */
+
+.section-label {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.script-title {
+
+    font-family: var(--font-script);
+
+    font-size: clamp(52px, 7vw, 82px);
+
+    font-weight: 400;
+
+    color: var(--gold-dark);
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+}
+
+.divider {
+
+    color: var(--gold);
+
+    font-size: 22px;
+
+    margin: 25px 0;
+
+}
+
+.small-divider {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    margin: 25px auto;
+
+}
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+.btn-gold {
+
+    display: inline-block;
+
+    background: var(--gold);
+
+    color: white;
+
+    border: 1px solid var(--gold);
+
+    padding: 16px 35px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+
+}
+
+.btn-gold:hover {
+
+    background: var(--gold-dark);
+
+    border-color: var(--gold-dark);
+
+    transform: translateY(-3px);
+
+}
+
+.btn-outline {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid var(--gold);
+
+    background: transparent;
+
+    color: var(--gold-dark);
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+
+}
+
+.btn-outline:hover {
+
+    background: var(--gold);
+
+    color: white;
+
+}
+
+
+/* ==========================================
+   BIENVENIDA
+========================================== */
+
+.welcome-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100vh;
+    height: 100dvh;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&auto=format&fit=crop&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9999;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.welcome-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.52);
+
+}
+
+.welcome-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 700px;
+
+    animation: fadeUp 1.2s ease;
+
+}
+
+.welcome-small {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
+
+}
+
+.welcome-content h1 {
+
+    font-family: var(--font-script);
+
+    font-size: clamp(60px, 10vw, 110px);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+}
+
+.ornament {
+
+    font-size: 25px;
+
+    color: #e0c693;
+
+    margin: 25px 0;
+
+}
+
+.welcome-text {
+
+    font-family: var(--font-title);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    height: 100vh;
+    min-height: 650px;
+
+    position: relative;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&auto=format&fit=crop&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.42);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 20px;
+
+}
+
+.hero-subtitle {
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 30px;
+
+}
+
+.hero h1 {
+
+    font-family: var(--font-script);
+
+    font-weight: 400;
+
+    font-size: clamp(65px, 10vw, 120px);
+
+    line-height: 1.1;
+
+}
+
+.hero h1 span {
+
+    display: block;
+
+    font-size: 65px;
+
+}
+
+.hero-line {
+
+    width: 80px;
+
+    height: 1px;
+
+    background: white;
+
+    margin: 30px auto;
+
+}
+
+.hero-date {
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+}
+
+.hero-message {
+
+    font-family: var(--font-title);
+
+    font-style: italic;
+
+    font-size: 18px;
+
+    margin-top: 30px;
+
+}
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+
+}
+
+.scroll-indicator span {
+
+    display: block;
+
+    font-size: 25px;
+
+    margin-top: 10px;
+
+    animation: bounce 2s infinite;
+
+}
+
+
+/* ==========================================
+   INTRODUCCIÓN
+========================================== */
+
+.intro {
+
+    background: var(--cream);
+
+}
+
+.intro-text {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 2.1;
+
+    font-size: 14px;
+
+    color: var(--text-light);
+
+}
+
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+.countdown-section {
+
+    background: white;
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+}
+
+.countdown-section h2 {
+
+    font-family: var(--font-title);
+
+    font-size: 35px;
+
+    font-weight: 400;
+
+    margin-bottom: 50px;
+
+}
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+}
+
+.time-box {
+
+    min-width: 110px;
+
+}
+
+.time-box span {
+
+    display: block;
+
+    font-family: var(--font-title);
+
+    font-size: 48px;
+
+    color: var(--gold-dark);
+
+}
+
+.time-box small {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+.countdown-message {
+
+    margin-top: 45px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================
+   HISTORIA
+========================================== */
+
+.story {
+
+    background: var(--cream);
+
+}
+
+.story-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.story-image img {
+
+    height: 570px;
+
+    object-fit: cover;
+
+    box-shadow: 15px 15px 0 rgba(185,154,99,0.15);
+
+}
+
+.story-content {
+
+    text-align: left;
+
+}
+
+.story-content .small-divider {
+
+    margin-left: 0;
+
+}
+
+.story-content p {
+
+    line-height: 2;
+
+    font-size: 14px;
+
+    color: var(--text-light);
+
+}
+
+
+/* ==========================================
+   FECHA
+========================================== */
+
+.date-section {
+
+    background: white;
+
+}
+
+.date-card {
+
+    max-width: 430px;
+
+    margin: 35px auto;
+
+    border-top: 1px solid var(--gold);
+
+    border-bottom: 1px solid var(--gold);
+
+    padding: 35px 15px;
+
+}
+
+.date-month {
+
+    letter-spacing: 5px;
+
+    font-size: 15px;
+
+    color: var(--gold-dark);
+
+}
+
+.date-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 20px 0;
+
+}
+
+.date-row span {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+.date-row strong {
+
+    font-family: var(--font-title);
+
+    font-size: 95px;
+
+    font-weight: 400;
+
+    color: var(--gold-dark);
+
+}
+
+.date-time {
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* ==========================================
+   EVENTOS
+========================================== */
+
+.event-section {
+
+    background: var(--cream);
+
+}
+
+.event-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+    margin-top: 55px;
+
+}
+
+.event-card {
+
+    background: white;
+
+    padding: 65px 30px;
+
+    border: 1px solid #eee5d7;
+
+    transition: 0.3s;
+
+}
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+
+}
+
+.event-icon {
+
+    font-size: 45px;
+
+    color: var(--gold);
+
+    margin-bottom: 20px;
+
+}
+
+.event-card h3 {
+
+    font-family: var(--font-title);
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+}
+
+.event-place {
+
+    font-weight: 600;
+
+}
+
+.event-card p {
+
+    font-size: 13px;
+
+    line-height: 2;
+
+}
+
+.event-address {
+
+    margin-bottom: 30px;
+
+    color: var(--text-light);
+
+}
+
+
+/* ==========================================
+   GALERÍA
+========================================== */
+
+.gallery-section {
+
+    background: white;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 50px;
+
+}
+
+.gallery-item {
+
+    overflow: hidden;
+
+}
+
+.gallery-item img {
+
+    height: 390px;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ==========================================
+   VESTIMENTA
+========================================== */
+
+.dress-section {
+
+    background: var(--cream);
+
+}
+
+.dress-icon {
+
+    font-size: 55px;
+
+    color: var(--gold);
+
+    margin: 25px 0;
+
+}
+
+.dress-section h3 {
+
+    font-family: var(--font-title);
+
+    font-size: 26px;
+
+    font-weight: 400;
+
+    margin-bottom: 25px;
+
+}
+
+.dress-section p {
+
+    max-width: 500px;
+
+    margin: auto;
+
+    line-height: 2;
+
+    font-size: 14px;
+
+    color: var(--text-light);
+
+}
+
+
+/* ==========================================
+   RSVP
+========================================== */
+
+.rsvp-section {
+
+    background: white;
+
+}
+
+.rsvp-description {
+
+    max-width: 500px;
+
+    margin: 0 auto 40px;
+
+    line-height: 2;
+
+    font-size: 14px;
+
+}
+
+.rsvp-form {
+
+    max-width: 450px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    gap: 15px;
+
+}
+
+.rsvp-form label {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+.rsvp-form input,
+.rsvp-form select {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #ddd5ca;
+
+    background: #faf8f4;
+
+    outline: none;
+
+    border-radius: 0;
+
+    color: var(--text);
+
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus {
+
+    border-color: var(--gold);
+
+}
+
+.rsvp-form button {
+
+    margin-top: 20px;
+
+}
+
+
+/* ==========================================
+   FINAL
+========================================== */
+
+.final-section {
+
+    min-height: 600px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1600&auto=format&fit=crop&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 70px 20px;
+
+}
+
+.final-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+
+}
+
+.final-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.final-content h2 {
+
+    font-family: var(--font-script);
+
+    font-size: clamp(60px, 9vw, 105px);
+
+    font-weight: 400;
+
+    margin: 30px 0;
+
+}
+
+.final-content p {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    line-height: 2;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #f3eee6;
+
+}
+
+footer p {
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+
+}
+
+footer .brand {
+
+    color: var(--gold-dark);
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================
+   MÚSICA
+========================================== */
+
+.music-button {
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: var(--gold);
+
+    color: white;
+
+    font-size: 25px;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.music-button.playing {
+
+    animation: pulse 2s infinite;
+
+}
+
+
+/* ==========================================
+   ANIMACIONES
+========================================== */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+}
+
+@keyframes pulse {
+
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(185,154,99,0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(185,154,99,0);
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 75px 20px;
+    }
+
+    .welcome-content h1 {
+        font-size: 65px;
+    }
+
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero h1 span {
+        font-size: 45px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .story-image img {
+        height: 430px;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
+    .story-content .small-divider {
+        margin: 25px auto;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+    .countdown {
+        gap: 15px;
+    }
+
+    .time-box {
+        min-width: 65px;
+    }
+
+    .time-box span {
+        font-size: 35px;
+    }
+
+    .time-box small {
+        font-size: 8px;
+    }
+
+    .date-row {
+        gap: 15px;
+    }
+
+    .date-row strong {
+        font-size: 75px;
+    }
+
+    .date-row span {
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .welcome-content h1 {
+        font-size: 55px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-date {
+        font-size: 11px;
+    }
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+
+    .event-card {
+        padding: 45px 20px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
